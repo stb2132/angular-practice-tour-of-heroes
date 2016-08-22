@@ -61,7 +61,6 @@ import { HeroService } from './hero.service';
    `],
 
     template: `
-      <h1>{{title}}</h1>
       <h2>My Heroes</h2>
       <ul class="heroes">
         <li *ngFor="let hero of heroes" (click)="onSelect(selectedHero)"
@@ -76,7 +75,6 @@ import { HeroService } from './hero.service';
       `,
 })
 export class HeroesComponent { 
-    title = 'HI JOANNA';
     heroes: Hero[];
     selectedHero: Hero;
 
