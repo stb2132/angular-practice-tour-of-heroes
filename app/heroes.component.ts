@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { Hero }      from  './hero';
 import { HeroService } from './hero.service';
 
-
 @Component({
     selector: 'my-heroes',
     styles: [`
@@ -75,9 +74,8 @@ import { HeroService } from './hero.service';
       <my-hero-detail [hero]="selectedHero"> </my-hero-detail>
 
       `,
-      providers: [HeroService]
 })
-export class HeroesComponent implements OnInit { 
+export class HeroesComponent { 
     title = 'HI JOANNA';
     heroes: Hero[];
     selectedHero: Hero;
